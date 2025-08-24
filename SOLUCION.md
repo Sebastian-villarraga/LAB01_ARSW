@@ -11,7 +11,17 @@ En cambio, al utilizar .run(), los números se imprimen de manera ordenada
 ```
 
 # segunda parte - 1 Para discutir la próxima clase
--
+- La estrategia de paralelismo antes implementada es ineficiente en ciertos casos,
+  pues la búsqueda se sigue realizando aún cuando los N hilos (en su conjunto)
+  ya hayan encontrado el número mínimo de ocurrencias requeridas para reportar al servidor como malicioso.
+   Cómo se podría modificar la implementación para minimizar el número de consultas en estos casos?, qué elemento nuevo traería esto al problema?
+``` txt
+Para reducir el número de consultas en este tipo de casos,
+la implementación puede modificarse utilizando mecanismos que aseguren
+el acceso correcto a la variable compartida, como el uso de variables atómicas.
+Esto introduce un nuevo elemento en el problema: la sincronización, necesaria
+para garantizar que los hilos accedan a datos actualizados y evitar inconsistencias producidas por la concurrencia.
+```
 
 # tercera parte  - Evaluación de Desempeño
 -
