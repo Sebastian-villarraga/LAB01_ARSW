@@ -18,7 +18,7 @@
 
 1. Un solo hilo.
 <img width="953" height="531" alt="image" src="https://github.com/user-attachments/assets/20196a49-10c4-42cc-bf36-21b0cc6bfc65" />
-2. Tantos hilos como núcleos de procesamiento: el número de núcleos es 8 en este caso.
+2. Tantos hilos como núcleos de procesamiento: el número de núcleos es 8.
 <img width="954" height="530" alt="image" src="https://github.com/user-attachments/assets/eb2111d9-23e2-477d-bf73-adf23b70c312" />
 3. Tantos hilos como el doble de núcleos de procesamiento: 16 núcleos.
 <img width="954" height="525" alt="image" src="https://github.com/user-attachments/assets/f07abc38-cd45-4e6a-b1d4-8c57f6d9887c" />
@@ -55,3 +55,4 @@
 3. De acuerdo con lo anterior, si para este problema en lugar de 100 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 100 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 100/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta.
     - **100 Máquinas 1 hilo en cada una**: Puede que haya una mejoría, pues se está aprovechando al máximo los recursos en cada una de las máquinas hipóteticas.
     - **c hilos en 100/c máquinas**: Cada hilo tiene los recursos suficientes para aprovechar al máximo el rendimiento en las 100 máquinas. Se mejoraría el rendimiento ya que muchas partes se pueden hacer al mismo tiempo.
+
